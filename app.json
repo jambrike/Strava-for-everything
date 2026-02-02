@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ProofIt",
+    "slug": "proofit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#131314"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.proofit.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#131314"
+      },
+      "package": "com.proofit.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-location",
+      "expo-asset",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ProofIt to access your photos to attach proof images.",
+          "cameraPermission": "Allow ProofIt to use the camera to capture proof images.",
+          "microphonePermission": "Allow ProofIt to use the microphone for video capture.",
+          "savePhotosPermission": "Allow ProofIt to save captured proof images to your library."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "scheme": "proofit"
+  }
+}
